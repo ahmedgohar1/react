@@ -1,0 +1,108 @@
+#Portfolio h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#Portfolio #iDiv::after,#Portfolio #iDiv::before{
+    background-color: var(--p-color);
+    height: 4px;
+    top: 50%;
+}
+
+#Portfolio #iDiv i{
+    font-size: xx-large;
+}
+
+#Portfolio .img-card
+{
+    border-radius: 15px;
+}
+
+#Portfolio .overlay{
+    background-color: #1abc9ccf;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#Portfolio .img-card:hover .overlay
+{
+    opacity: 1;
+}
+
+#Portfolio .img-modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#Portfolio .img-modal-body
+{
+    width: 60%;
+    height: 80vh;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+#Portfolio .img-modal-body h2{
+    font-size: 40px;
+}
+
+#Portfolio .img-modal-body img
+{
+    width: 60%;
+    margin-top: 2rem;
+    border-radius: 15px;
+
+}
+
+#Portfolio .img-modal-body .close-btn
+{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--s-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Portfolio .img-modal-body .close-btn:hover
+{
+    color: red;
+}
+
+.show{
+    opacity: 1;
+    display: flex !important;
+}
+.hide{
+    display: none !important;
+    opacity: 0;
+}
+
+@media screen and (max-width: 640px) {
+    #Portfolio h2{
+        font-size: 30px;
+    }
+}

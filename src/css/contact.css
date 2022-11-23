@@ -1,0 +1,37 @@
+#Contact h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#Contact #iDiv::after,#Contact #iDiv::before{
+    background-color: var(--p-color);
+    height: 4px;
+    top: 50%;
+}
+
+#Contact #iDiv i{
+    font-size: xx-large;
+}
+
+#Contact button {
+    background-color: var(--s-color);
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    width: fit-content;
+}
+
+#Contact input, #Contact textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 2rem !important;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    resize: none;
+}

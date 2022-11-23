@@ -1,0 +1,27 @@
+#About{
+    background-color: var(--s-color);
+    padding: 5rem;
+}
+
+#About h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#About #iDiv::after,#About #iDiv::before{
+    background-color: white;
+    height: 4px;
+    top: 50%;
+}
+
+#About #iDiv i{
+    font-size: xx-large;
+}
+
+
+#About p{ font-size: 24px; }
+
+#About{}
+
+#About{}
